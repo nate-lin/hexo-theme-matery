@@ -1,8 +1,6 @@
-# hexo-theme-matery
+# hexo-theme-matery主题
 
 [![HitCount](http://hits.dwyl.io/blinkfox/hexo-theme-matery.svg)](http://hits.dwyl.io/blinkfox/hexo-theme-matery) [![Gitter](https://img.shields.io/gitter/room/blinkfox/hexo-theme-matery.svg)](https://gitter.im/hexo-theme-matery/Lobby?utm_source=badge) [![GitHub issues](https://img.shields.io/github/issues/blinkfox/hexo-theme-matery.svg)](https://github.com/blinkfox/hexo-theme-matery/issues) [![GitHub license](https://img.shields.io/github/license/blinkfox/hexo-theme-matery.svg)](https://github.com/blinkfox/hexo-theme-matery/blob/master/LICENSE) [![Download](https://img.shields.io/badge/downloads-master-green.svg)](https://codeload.github.com/blinkfox/hexo-theme-matery/zip/master) [![Hexo Version](https://img.shields.io/badge/hexo-%3E%3D%205.0.0-blue.svg)](http://hexo.io) [![GitHub forks](https://img.shields.io/github/forks/blinkfox/hexo-theme-matery.svg)](https://github.com/blinkfox/hexo-theme-matery/network) [![GitHub stars](https://img.shields.io/github/stars/blinkfox/hexo-theme-matery.svg)](https://github.com/blinkfox/hexo-theme-matery/stargazers)
-
-[🇺🇸English Document](README.md) | [国内访问示例 (http://blinkfox.com)](http://blinkfox.com) | [Github 部署演示示例 (https://blinkfox.github.io)](https://blinkfox.github.io) | QQ 交流群1（已满）: [`926552981`](https://jq.qq.com/?_wv=1027&k=5zMDYHT) | QQ 交流群2（推荐）: [`971887688`](https://jq.qq.com/?_wv=1027&k=53q2Ayp)
 
 > 这是一个采用 `Material Design` 和响应式设计的 Hexo 博客主题。
 
@@ -46,7 +44,7 @@
 当然你也可以在你的 `themes` 文件夹下使用 `git clone` 命令来下载:
 
 ```bash
-git clone https://github.com/blinkfox/hexo-theme-matery.git
+git clone https://github.com/nate-lin/hexo-theme-matery.git
 ```
 
 ## 配置
@@ -74,7 +72,83 @@ hexo new page "categories"
 ```yaml
 ---
 title: categories
-date: 2018-09-30 17:25:30
+date: 2020-09-30 19:15:33
+type: "categories"
+layout: "categories"
+---
+```
+
+### 新建标这是一个采用 `Material Design` 和响应式设计的 Hexo 博客主题。
+
+## 特性
+
+- 简单漂亮，文章内容美观易读
+- [Material Design](https://material.io/) 设计
+- 响应式设计，博客在桌面端、平板、手机等设备上均能很好的展现
+- 首页轮播文章及每天动态切换 `Banner` 图片
+- 瀑布流式的博客文章列表（文章无特色图片时会有 `24` 张漂亮的图片代替）
+- 时间轴式的归档页
+- **词云**的标签页和**雷达图**的分类页
+- 丰富的关于我页面（包括关于我、文章统计图、我的项目、我的技能、相册等）
+- 可自定义的数据的友情链接页面
+- 支持文章置顶和文章打赏
+- 支持 `MathJax`
+- `TOC` 目录
+- 可设置复制文章内容时追加版权信息
+- 可设置阅读文章时做密码验证
+- [Gitalk](https://gitalk.github.io/)、[Gitment](https://imsun.github.io/gitment/)、[Valine](https://valine.js.org/) 和 [Disqus](https://disqus.com/) 评论模块（推荐使用 `Gitalk`）
+- 集成了[不蒜子统计](http://busuanzi.ibruce.info/)、谷歌分析（`Google Analytics`）和文章字数统计等功能
+- 支持在首页的音乐播放和视频播放功能
+- 支持`emoji`表情，用`markdown emoji`语法书写直接生成对应的能**跳跃**的表情。
+- 支持 [DaoVoice](http://www.daovoice.io/)、[Tidio](https://www.tidio.com/) 在线聊天功能。
+
+## 贡献者
+
+感谢下面列出的贡献者，没有他们，hexo-theme-matery 不会这么完美。
+
+- [@HarborZeng](https://github.com/HarborZeng)
+- [@shw2018](https://github.com/shw2018)
+- [@L1cardo](https://github.com/L1cardo)
+- [@Five-great](https://github.com/Five-great)
+
+## 下载
+
+本主题**推荐你使用 Hexo 5.0.0 及以上的版本**。如果，你已经有一个自己的 [Hexo](https://hexo.io/zh-cn/) 博客了，建议你将 Hexo 升级到最新稳定的版本。
+
+点击 [这里](https://codeload.github.com/blinkfox/hexo-theme-matery/zip/master) 下载 `master` 分支的最新稳定版的代码，解压缩后，将 `hexo-theme-matery` 的文件夹复制到你 Hexo 的 `themes` 文件夹中即可。
+
+当然你也可以在你的 `themes` 文件夹下使用 `git clone` 命令来下载:
+
+```bash
+git clone https://github.com/nate-lin/hexo-theme-matery.git
+```
+
+## 配置
+
+### 切换主题
+
+修改 Hexo 根目录下的 `_config.yml` 的  `theme` 的值：`theme: hexo-theme-matery`
+
+#### `_config.yml` 文件的其它修改建议:
+
+- 请修改 `_config.yml` 的 `url` 的值为你的网站主 `URL`（如：`http://xxx.github.io`）。
+- 建议修改两个 `per_page` 的分页条数值为 `6` 的倍数，如：`12`、`18` 等，这样文章列表在各个屏幕下都能较好的显示。
+- 如果你是中文用户，则建议修改 `language` 的值为 `zh-CN`。
+
+### 新建分类 categories 页
+
+`categories` 页是用来展示所有分类的页面，如果在你的博客 `source` 目录下还没有 `categories/index.md` 文件，那么你就需要新建一个，命令如下：
+
+```bash
+hexo new page "categories"
+```
+
+编辑你刚刚新建的页面文件 `/source/categories/index.md`，至少需要以下内容：
+
+```yaml
+---
+title: categories
+date: 2020-09-30 19:15:33
 type: "categories"
 layout: "categories"
 ---
@@ -93,7 +167,7 @@ hexo new page "tags"
 ```yaml
 ---
 title: tags
-date: 2018-09-30 18:23:38
+date: 2020-09-30 19:15:33
 type: "tags"
 layout: "tags"
 ---
@@ -112,7 +186,7 @@ hexo new page "about"
 ```yaml
 ---
 title: about
-date: 2018-09-30 17:25:30
+date: 2020-09-30 19:15:33
 type: "about"
 layout: "about"
 ---
@@ -131,7 +205,7 @@ hexo new page "contact"
 ```yaml
 ---
 title: contact
-date: 2018-09-30 17:25:30
+date: 2020-09-30 19:15:33
 type: "contact"
 layout: "contact"
 ---
@@ -152,7 +226,7 @@ hexo new page "friends"
 ```yaml
 ---
 title: friends
-date: 2018-12-12 21:25:30
+date: 2020-09-30 19:15:33
 type: "friends"
 layout: "friends"
 ---
@@ -181,6 +255,7 @@ layout: "friends"
     "title": "前去学习"
 }]
 ```
+
 ### 新建 404 页
 
 如果在你的博客 `source` 目录下还没有 `404.md` 文件，那么你就需要新建一个
@@ -234,6 +309,7 @@ menu:
 
 如果你需要二级菜单则可以在原基本菜单导航的基础上如下操作
      
+
 1. 在需要添加二级菜单的一级菜单下添加`children`关键字(如:`About`菜单下添加`children`)     
 2. 在`children`下创建二级菜单的 名称name,路径url和图标icon.      
 3. 注意每个二级菜单模块前要加 `-`.     
@@ -311,6 +387,8 @@ prismjs:
 npm install hexo-generator-search --save
 ```
 
+![](http://blog-lin1.oss-cn-shenzhen.aliyuncs.com/img/image-20201216172754552.png)
+
 在 Hexo 根目录下的 `_config.yml` 文件中，新增以下的配置项：
 
 ```yaml
@@ -328,6 +406,8 @@ search:
 ```bash
 npm i hexo-permalink-pinyin --save
 ```
+
+![](http://blog-lin1.oss-cn-shenzhen.aliyuncs.com/img/image-20201216180014212.png)
 
 在 Hexo 根目录下的 `_config.yml` 文件中，新增以下的配置项：
 
@@ -349,6 +429,8 @@ permalink_pinyin:
 npm i --save hexo-wordcount
 ```
 
+![](http://blog-lin1.oss-cn-shenzhen.aliyuncs.com/img/image-20201216172601931.png)
+
 然后只需在本主题下的 `_config.yml` 文件中，将各个文章字数相关的配置激活即可：
 
 ```yaml
@@ -368,6 +450,8 @@ postInfo:
 ```bash
 npm install hexo-filter-github-emojis --save
 ```
+
+![](http://blog-lin1.oss-cn-shenzhen.aliyuncs.com/img/image-20201216175948561.png)
 
 在 Hexo 根目录下的 `_config.yml` 文件中，新增以下的配置项：
 
@@ -490,25 +574,26 @@ music:
 
 `Front-matter` 选项中的所有内容均为**非必填**的。但我仍然建议至少填写 `title` 和 `date` 的值。
 
-| 配置选项   | 默认值                      | 描述                                                         |
-| ---------- | --------------------------- | ------------------------------------------------------------ |
-| title      | `Markdown` 的文件标题        | 文章标题，强烈建议填写此选项                                 |
-| date       | 文件创建时的日期时间          | 发布时间，强烈建议填写此选项，且最好保证全局唯一             |
-| author     | 根 `_config.yml` 中的 `author` | 文章作者                                                     |
-| img        | `featureImages` 中的某个值   | 文章特征图，推荐使用图床(腾讯云、七牛云、又拍云等)来做图片的路径.如: `http://xxx.com/xxx.jpg` |
-| top        | `true`                      | 推荐文章（文章是否置顶），如果 `top` 值为 `true`，则会作为首页推荐文章 |
-| cover      | `false`                     | `v1.0.2`版本新增，表示该文章是否需要加入到首页轮播封面中 |
-| coverImg   | 无                          | `v1.0.2`版本新增，表示该文章在首页轮播封面需要显示的图片路径，如果没有，则默认使用文章的特色图片 |
-| password   | 无                          | 文章阅读密码，如果要对文章设置阅读验证密码的话，就可以设置 `password` 的值，该值必须是用 `SHA256` 加密后的密码，防止被他人识破。前提是在主题的 `config.yml` 中激活了 `verifyPassword` 选项 |
-| toc        | `true`                      | 是否开启 TOC，可以针对某篇文章单独关闭 TOC 的功能。前提是在主题的 `config.yml` 中激活了 `toc` 选项 |
-| mathjax    | `false`                     | 是否开启数学公式支持 ，本文章是否开启 `mathjax`，且需要在主题的 `_config.yml` 文件中也需要开启才行 |
-| summary    | 无                          | 文章摘要，自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要 |
-| categories | 无                          | 文章分类，本主题的分类表示宏观上大的分类，只建议一篇文章一个分类 |
-| tags       | 无                          | 文章标签，一篇文章可以多个标签                              |
-| keywords   | 文章标题                     | 文章关键字，SEO 时需要                              |
-| reprintPolicy | cc_by                    | 文章转载规则， 可以是 cc_by, cc_by_nd, cc_by_sa, cc_by_nc, cc_by_nc_nd, cc_by_nc_sa, cc0, noreprint 或 pay 中的一个 |
+| 配置选项      | 默认值                         | 描述                                                         |
+| ------------- | ------------------------------ | ------------------------------------------------------------ |
+| title         | `Markdown` 的文件标题          | 文章标题，强烈建议填写此选项                                 |
+| date          | 文件创建时的日期时间           | 发布时间，强烈建议填写此选项，且最好保证全局唯一             |
+| author        | 根 `_config.yml` 中的 `author` | 文章作者                                                     |
+| img           | `featureImages` 中的某个值     | 文章特征图，推荐使用图床(腾讯云、七牛云、又拍云等)来做图片的路径.如: `http://xxx.com/xxx.jpg` |
+| top           | `true`                         | 推荐文章（文章是否置顶），如果 `top` 值为 `true`，则会作为首页推荐文章 |
+| cover         | `false`                        | `v1.0.2`版本新增，表示该文章是否需要加入到首页轮播封面中     |
+| coverImg      | 无                             | `v1.0.2`版本新增，表示该文章在首页轮播封面需要显示的图片路径，如果没有，则默认使用文章的特色图片 |
+| password      | 无                             | 文章阅读密码，如果要对文章设置阅读验证密码的话，就可以设置 `password` 的值，该值必须是用 `SHA256` 加密后的密码，防止被他人识破。前提是在主题的 `config.yml` 中激活了 `verifyPassword` 选项 |
+| toc           | `true`                         | 是否开启 TOC，可以针对某篇文章单独关闭 TOC 的功能。前提是在主题的 `config.yml` 中激活了 `toc` 选项 |
+| mathjax       | `false`                        | 是否开启数学公式支持 ，本文章是否开启 `mathjax`，且需要在主题的 `_config.yml` 文件中也需要开启才行 |
+| summary       | 无                             | 文章摘要，自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要 |
+| categories    | 无                             | 文章分类，本主题的分类表示宏观上大的分类，只建议一篇文章一个分类 |
+| tags          | 无                             | 文章标签，一篇文章可以多个标签                               |
+| keywords      | 文章标题                       | 文章关键字，SEO 时需要                                       |
+| reprintPolicy | cc_by                          | 文章转载规则， 可以是 cc_by, cc_by_nd, cc_by_sa, cc_by_nc, cc_by_nc_nd, cc_by_nc_sa, cc0, noreprint 或 pay 中的一个 |
 
 > **注意**:
+>
 > 1. 如果 `img` 属性不填写的话，文章特色图会根据文章标题的 `hashcode` 的值取余，然后选取主题中对应的特色图片，从而达到让所有文章的特色图**各有特色**。
 > 2. `date` 的值尽量保证每篇文章是唯一的，因为本主题中 `Gitalk` 和 `Gitment` 识别 `id` 是通过 `date` 的值来作为唯一标识的。
 > 3. 如果要对文章设置阅读验证密码的功能，不仅要在 Front-matter 中设置采用了 SHA256 加密的 password 的值，还需要在主题的 `_config.yml` 中激活了配置。有些在线的 SHA256 加密的地址，可供你使用：[开源中国在线工具](http://tool.oschina.net/encrypt?type=2)、[chahuo](http://encode.chahuo.com/)、[站长工具](http://tool.chinaz.com/tools/hash.aspx)。
@@ -521,7 +606,7 @@ music:
 ```yaml
 ---
 title: typora-vue-theme主题介绍
-date: 2018-09-07 09:25:00
+date: 2020-09-07 09:25:00
 ---
 ```
 
@@ -549,15 +634,19 @@ tags:
 
 ## 效果截图
 
-![首页](http://static.blinkfox.com/matery-20181202-1.png)
+![首页](http://blog-lin1.oss-cn-shenzhen.aliyuncs.com/img/image-20201216200528487.png)
 
-![首页推荐文章](http://static.blinkfox.com/matery-20181202-2.png)
+![首页文章列表](http://blog-lin1.oss-cn-shenzhen.aliyuncs.com/img/image-20201216201005473.png)
 
-![首页文章列表](http://static.blinkfox.com/matery-20181202-3.png)
+![首页文章列表](http://blog-lin1.oss-cn-shenzhen.aliyuncs.com/img/image-20201216201903276.png)
 
-![首页文章列表](http://static.blinkfox.com/matery-20181202-7.png)
+![首页文章列表](http://blog-lin1.oss-cn-shenzhen.aliyuncs.com/img/image-20201216201932007.png)
 
-![首页文章列表](http://static.blinkfox.com/matery-20181202-8.png)
+![首页文章列表](http://blog-lin1.oss-cn-shenzhen.aliyuncs.com/img/image-20201216200745007.png)
+
+![首页文章列表](http://blog-lin1.oss-cn-shenzhen.aliyuncs.com/img/image-20201216200859752.png)
+
+
 
 ## 自定制修改
 
@@ -615,4 +704,4 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 
 ## 版本变更记录
 
-参见 [CHANGELOG.md](https://github.com/blinkfox/hexo-theme-matery/blob/master/README.md)
+参见 [CHANGELOG.md](https://github.com/blinkfox/hexo-theme-matery/blob/master/README.md)https://github.com/blinkfox/hexo-theme-matery/blob/master/README.md)
