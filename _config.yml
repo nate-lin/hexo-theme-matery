@@ -22,7 +22,17 @@ menu:
   友联:
     url: /friends
     icon: fas fa-address-book
-  # 二级菜单写法如下
+  导航:
+    icon: fas fa-location-arrow
+    children:
+      - name: 导航
+        url: /navigate
+        icon: fas fa-navigate
+      # - name: Movies
+      #   url: /movies
+      #   icon: fas fa-film
+
+ # 二级菜单写法如下
   #Medias:
   #  icon: fas fa-list
   #  children:
@@ -39,10 +49,11 @@ menu:
   #      url: /galleries
   #      icon: fas fa-image
 
+
 # Website start time.
 # 站点运行开始时间.
 time:
-  enable: false
+  enable: true
   year: 2020 # 年份
   month: 07 # 月份
   date: 7 # 日期
@@ -88,7 +99,7 @@ music:
   preload: 'auto'   # 预加载，可选值: 'none', 'metadata', 'auto'
   volume: 0.7       # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
   listFolded: true  # 列表默认折叠
-  hideLrc: false     # 隐藏歌词
+  hideLrc: true     # 隐藏歌词
 
 # Whether to display the videos.
 # 是否在首页显示视频.
@@ -126,21 +137,20 @@ indexbtn:
   enable: true
   name: Github
   icon: fab fa-github-alt
-  url: https://github.com/blinkfox/hexo-theme-matery
+  url: https://github.com/nate-lin/hexo-theme-matery
 
 # The configurations of the second line of home banner
 # icon/button will not show up if you leave the corresponding socialLink empty
 # 首页 banner 中的第二行个人信息配置，留空即不启用
 socialLink:
-  github:  https://github.com/nate-lin
-  #gitee:  https://gitee.com/nate-lin
+  github:  https://github.com/nate-lin 
   email: linchunyan335@163.com
   #facebook: # https://www.facebook.com/xxx
   #twitter: # https://twitter.com/xxx
   qq: 1724342055
   #weibo: # https://weibo.com/xxx
   #zhihu: # https://www.zhihu.com/xxx
-  #rss: true # true、false
+  rss: true # true、false
   #Facebook: fab fa-facebook
   #Twitter: fab fa-twitter
   #Google-plus: fab fa-google-plus
@@ -150,6 +160,7 @@ socialLink:
   #Slack: fab fa-slack
   #Sina Weibo: fab fa-weibo
   weixin: LCY5643350216
+  gitee:  https://gitee.com/nate-lin
   #QQ: fab fa-qq
   #Zhihu: fab fa-zhihu
 
@@ -159,7 +170,7 @@ socialLink:
 # 可以在某篇文章的 Front-matter 中再加上`toc: false`，使该篇文章关闭TOC目录功能
 toc:
   enable: true
-  heading: h2, h3, h4
+  heading: h2, h3, h4, h5
   collapseDepth: 0 # 目录默认展开层级
   showToggleBtn: true # 是否显示切换TOC目录展开收缩的按钮
 
@@ -204,8 +215,8 @@ postInfo:
   update: false # 更新日期
   wordCount: true # 文章字数统计
   totalCount: true # 站点总文章字数
-  min2read: false # 文章阅读时长
-  readCount: false # 文章阅读次数
+  min2read: true # 文章阅读时长
+  readCount: true # 文章阅读次数
 
 # Whether to activate the 'love' effect of clicking on the page.
 # 是否激活点击页面的'爱心'效果，默认激活.
@@ -216,8 +227,8 @@ clicklove:
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
 profile:
   avatar: /medias/avatar.jpg
-  career: Software Engineer
-  introduction: If you wish to succeed, you should use persistence as your good friend, experience as your reference, prudence as your brother and hope as your sentry.
+  career: Java开发
+  introduction: 现实的抽象是语言，语言的抽象是程序，程序的抽象是数理逻辑，数理逻辑的抽象是超越认知的真理。
 
 # config my projects informations in about page.
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
@@ -332,16 +343,16 @@ livere:
 # To use it, activate the configuration item and set appId and appKey.
 # Valine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
 valine:
-  enable: false
-  appId:
-  appKey:
-  notify: false
-  verify: false
+  enable: true                     ## 我的是这个评论  百度： hexo valine
+  appId: gjVQfogXMqoQNGFBe1UkoMSx-MdYXbMMI
+  appKey: q30CkGRuqgObko4gl8oniQ5H
+  notify: true
+  verify: true
   visitor: true
-  avatar: 'mm' # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
+  avatar: 'identicon' # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
   pageSize: 10
-  placeholder: 'just go go' # Comment Box placeholder
-  background: /medias/comment_bg.png
+  placeholder: '欢迎指点江山😀，留下你的评论，我一直都在哦！' # Comment Box placeholder
+  background: /medias/comment_bg1.webp
 
 # The configuration of the MiniValine comment module is not activated by default.
 # To use it, activate the configuration item and set appId and appKey.
@@ -350,7 +361,7 @@ valine:
 minivaline:
   enable: false
   appId: zhM0AOiqle17oPoE84CoYw1e-gzGzoHsz # Your leancloud application appid
-  appKey: itmzT1JbXfAjVwMqDhGPzU45 # Your leancloud application appkey
+  appKey: itmzT1JbXfAjVwMqDhGPzU45 # Your leancloud application appkey   这个也是一样的，用一个就好
   mode: DesertsP # DesertsP or xCss
   placeholder: Write a Comment # Comment box placeholder
   math: true # Support MathJax.
@@ -528,8 +539,8 @@ reprint:
 
 # DaoVoice online contact
 daovoice:
-  enable: false
-  app_id:
+  enable: true
+  app_id: "8aa4dd22"
 
 # Tidio online contact
 tidio:
@@ -538,8 +549,8 @@ tidio:
 
 # 腾讯兔小巢，见https://txc.qq.com/
 tuxiaochao:
-  enable: false
-  productId:
+  enable: true
+  productId: 300030
 #背景canvas-nest
 canvas_nest:
   enable: false
@@ -567,7 +578,7 @@ sharejs:
   enable: true
   sites: twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin
 
-# addthis文章分享模块.
+# addthis文章分享模块.                              百度：hexo addthis 注册找到pid即可  qq邮箱注册试试
 addthis:
   enable: false
   pubid:  # 前往https://www.addthis.com/获取
@@ -623,7 +634,7 @@ background:
 
 # 说说 https://artitalk.js.org/
 artitalk:
-  enable: false
+  enable: true
   appId: # xxxxx
   appKey: # xxxxxx
 
@@ -646,3 +657,4 @@ bbtime:
  appId: # 你的appId
  appKey: # 你的appKey
  serverURLs: # https://你的api
+

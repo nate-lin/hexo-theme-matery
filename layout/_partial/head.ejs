@@ -1,3 +1,4 @@
+
 <%
     var title = page.title;
 
@@ -72,6 +73,12 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <style>
+        #waifu{
+            left: auto !important;
+            right: 440px !important;
+        }
+        </style>
     <%- partial('_partial/google-analytics') %>
     <title><%= pageTitle %></title>
     <link rel="icon" type="<%= iconType %>" href="<%- theme.jsDelivr.url %><%- url_for(theme.favicon) %>">
