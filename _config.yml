@@ -348,6 +348,7 @@ valine:
   appKey: q30CkGRuqgObko4gl8oniQ5H
   notify: true
   verify: true
+
   visitor: true
   avatar: 'identicon' # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
   pageSize: 10
