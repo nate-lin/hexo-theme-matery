@@ -36,7 +36,7 @@ menu:
         icon: fas fa-music       
       - name: 聚宝盒
         url: /box
-        icon: fas fa-film
+        icon: fas fa-inbox
 #      - name: 个人简历
 #        url: /cv
 #        icon: fas fa-book
