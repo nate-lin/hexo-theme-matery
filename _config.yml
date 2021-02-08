@@ -16,7 +16,7 @@ menu:
   关于:
     url: /about
     icon: fas fa-user-circle
-  联系我:
+  留言板:
     url: /contact
     icon: fas fa-comments
   友联:
@@ -64,8 +64,8 @@ menu:
 time:
   enable: true
   year: 2020 # 年份
-  month: 07 # 月份
-  date: 7 # 日期
+  month: 01 # 月份
+  date: 1 # 日期
   hour: 00 # 小时
   minute: 00 # 分钟
   second: 00 # 秒
